@@ -1,0 +1,8 @@
+{
+  "name": "Mepdream operation solutions Pvt Ltd.",
+  "description": "The official corporate website for Mepdream operation solutions Pvt Ltd., specializing in professional electrical and technical maintenance services.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
