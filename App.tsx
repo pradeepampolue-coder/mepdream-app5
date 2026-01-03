@@ -1059,6 +1059,7 @@ export default function App() {
   </address>
 </div>
 
+
           <div className="bg-white rounded-[40px] p-10 shadow-2xl">
             <h4 className="text-2xl font-bold mb-8">Send a Message</h4>
             <form className="space-y-6"><input type="text" className="w-full bg-slate-50 border rounded-xl px-5 py-4" placeholder="Your Name" /><input type="email" className="w-full bg-slate-50 border rounded-xl px-5 py-4" placeholder="Email Address" /><textarea className="w-full bg-slate-50 border rounded-2xl px-5 py-4 h-48" placeholder="Message"></textarea><button className="w-full bg-blue-600 text-white py-5 rounded-2xl font-bold uppercase hover:bg-blue-700 transition-all">Submit</button></form>
