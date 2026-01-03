@@ -1040,8 +1040,25 @@ export default function App() {
           <div className="space-y-6">
             <div className="p-8 bg-white rounded-3xl shadow-sm"><Phone className="w-6 h-6 text-blue-600 mb-4" /><p className="text-xs font-bold uppercase text-slate-400">Call Us</p><a href="tel:9337225129" className="text-2xl font-bold">9337225129</a></div>
             <div className="p-8 bg-white rounded-3xl shadow-sm"><Mail className="w-6 h-6 text-blue-600 mb-4" /><p className="text-xs font-bold uppercase text-slate-400">Email Us</p><a href="mailto:mepdreamoperations.25@gmail.com" className="text-xl font-bold">mepdreamoperations.25@gmail.com</a></div>
-            <div className="p-8 bg-white rounded-3xl shadow-sm"><MapPin className="w-6 h-6 text-blue-600 mb-4" /><p className="text-xs font-bold uppercase text-slate-400">Visit Us</p><address className="not-italic font-bold">Cyberabad, Rangareddy dist, 500019                             https://maps.app.goo.gl/RH4Fu3LrWqxPJ7uz6?g_st=aw </address></div>
-          </div>
+           <div className="p-8 bg-white rounded-3xl shadow-sm">
+  <MapPin className="w-6 h-6 text-blue-600 mb-4" />
+
+  <p className="text-xs font-bold uppercase text-slate-400">Visit Us</p>
+
+  <address className="not-italic font-bold text-slate-700">
+    Cyberabad, Rangareddy dist, 500019
+    <br />
+    <a
+      href="https://maps.app.goo.gl/RH4Fu3LrWqxPJ7uz6?g_st=aw"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 underline hover:text-blue-800"
+    >
+      View on Google Maps
+    </a>
+  </address>
+</div>
+
           <div className="bg-white rounded-[40px] p-10 shadow-2xl">
             <h4 className="text-2xl font-bold mb-8">Send a Message</h4>
             <form className="space-y-6"><input type="text" className="w-full bg-slate-50 border rounded-xl px-5 py-4" placeholder="Your Name" /><input type="email" className="w-full bg-slate-50 border rounded-xl px-5 py-4" placeholder="Email Address" /><textarea className="w-full bg-slate-50 border rounded-2xl px-5 py-4 h-48" placeholder="Message"></textarea><button className="w-full bg-blue-600 text-white py-5 rounded-2xl font-bold uppercase hover:bg-blue-700 transition-all">Submit</button></form>
