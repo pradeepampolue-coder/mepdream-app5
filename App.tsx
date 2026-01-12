@@ -1034,16 +1034,83 @@ export default function App() {
 
   const ContactView = () => (
     <div className="animate-in slide-in-from-right duration-500 pt-12 pb-24 bg-slate-50 min-h-screen">
-      <div className="max-w-7xl mx-auto px-4">
-        <button onClick={() => navigateTo(Section.HOME)} className="flex items-center gap-2 text-blue-600 font-bold mb-8"><ArrowLeft className="w-4 h-4" /> Back to Home</button>
-        <div className="grid lg:grid-cols-2 gap-12">
-          <div className="space-y-6">
-            <div className="p-8 bg-white rounded-3xl shadow-sm"><Phone className="w-6 h-6 text-blue-600 mb-4" /><p className="text-xs font-bold uppercase text-slate-400">Call Us</p><a href="tel:9337225129" className="text-2xl font-bold">9337225129</a></div>
-            <div className="p-8 bg-white rounded-3xl shadow-sm"><Mail className="w-6 h-6 text-blue-600 mb-4" /><p className="text-xs font-bold uppercase text-slate-400">Email Us</p><a href="mailto:mepdreamoperations.25@gmail.com" className="text-xl font-bold">mepdreamoperations.25@gmail.com</a></div>
-         <div className="p-8 bg-white rounded-3xl shadow-sm"><MapPin className="w-6 h-6 text-blue-600 mb-4" /><p className="text-xs font-bold uppercase text-slate-400">Visit Us</p><address className="not-italic font-bold">Plot no: 97/PSuffah colony,,Opp Wipro ,Gopanpally Village ,Serilingampally Mandal ,Rangareddy dist,Cyberabad - 500019</address></div> </div>
-          <div className="bg-white rounded-[40px] p-10 shadow-2xl">
-            <h4 className="text-2xl font-bold mb-8">Send a Message</h4>
-            <form className="space-y-6"><input type="text" className="w-full bg-slate-50 border rounded-xl px-5 py-4" placeholder="Your Name" /><input type="email" className="w-full bg-slate-50 border rounded-xl px-5 py-4" placeholder="Email Address" /><textarea className="w-full bg-slate-50 border rounded-2xl px-5 py-4 h-48" placeholder="Message"></textarea><button className="w-full bg-blue-600 text-white py-5 rounded-2xl font-bold uppercase hover:bg-blue-700 transition-all">Submit</button></form>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <button onClick={() => navigateTo(Section.HOME)} className="flex items-center gap-2 text-blue-600 font-bold mb-8 hover:gap-3 transition-all">
+          <ArrowLeft className="w-4 h-4" /> Back to Home
+        </button>
+        
+        <div className="text-center mb-16">
+          <h2 className="text-blue-600 font-bold tracking-widest uppercase text-xs mb-4">Connect With Us</h2>
+          <h3 className="text-3xl md:text-5xl font-bold text-slate-900 font-heading">Contact Details</h3>
+        </div>
+
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-24">
+          <div className="space-y-8">
+            <div className="space-y-6">
+              <div className="flex gap-6 items-start p-8 bg-white rounded-[32px] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
+                <div className="p-4 bg-blue-50 text-blue-600 rounded-2xl group-hover:bg-blue-600 group-hover:text-white transition-all">
+                  <Phone className="w-6 h-6" />
+                </div>
+                <div>
+                  <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">24/7 Support Hotline</p>
+                  <a href="tel:9337225129" className="text-2xl font-bold text-slate-900 hover:text-blue-600 transition-colors tracking-tight">9337225129</a>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start p-8 bg-white rounded-[32px] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
+                <div className="p-4 bg-orange-50 text-orange-500 rounded-2xl group-hover:bg-orange-500 group-hover:text-white transition-all">
+                  <Mail className="w-6 h-6" />
+                </div>
+                <div>
+                  <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Email Us</p>
+                  <a href="mailto:mepdreamoperations.25@gmail.com" className="text-xl font-bold text-slate-900 hover:text-orange-500 transition-colors break-all">mepdreamoperations.25@gmail.com</a>
+                </div>
+              </div>
+
+              <div className="flex gap-6 items-start p-8 bg-white rounded-[32px] border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
+                <div className="p-4 bg-green-50 text-green-600 rounded-2xl group-hover:bg-green-600 group-hover:text-white transition-all">
+                  <MapPin className="w-6 h-6" />
+                </div>
+                <div className="flex-grow">
+                  <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-1">Our Location</p>
+                  <address className="not-italic text-slate-900 text-lg font-bold leading-relaxed mb-4">
+                    Plot no: 97/P, Suffah colony,<br />
+                    Opp Wipro, Gopanpally Village,<br />
+                    Serilingampally Mandal, Rangareddy dist,<br />
+                    Cyberabad - 500045
+                  </address>
+                  <a 
+                    href="https://maps.app.goo.gl/RH4Fu3LrWqxPJ7uz6?g_st=aw" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="inline-flex items-center gap-2 bg-slate-900 text-white px-6 py-3 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-blue-600 transition-all shadow-md group"
+                  >
+                    View on Google Maps <ExternalLink className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-[40px] p-10 text-slate-900 border border-slate-100 shadow-2xl flex flex-col">
+            <h4 className="text-2xl font-bold mb-8">Send a Quick Message</h4>
+            <form className="space-y-6 flex-grow">
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1">Your Name</label>
+                  <input type="text" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="John Doe" />
+                </div>
+                <div className="space-y-2">
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1">Email Address</label>
+                  <input type="email" className="w-full bg-slate-50 border border-slate-200 rounded-xl px-5 py-4 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="john@example.com" />
+                </div>
+              </div>
+              <div className="space-y-2">
+                <label className="text-[10px] font-bold uppercase tracking-widest text-slate-400 ml-1">Message Detail</label>
+                <textarea className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 h-48 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="How can we help with your electrical or technical needs?"></textarea>
+              </div>
+              <button className="w-full bg-blue-600 text-white py-5 rounded-2xl font-bold text-sm uppercase tracking-widest shadow-xl shadow-blue-100 hover:bg-blue-700 transition-all">Submit Consultation</button>
+            </form>
           </div>
         </div>
       </div>
@@ -1055,35 +1122,104 @@ export default function App() {
       <nav className="fixed top-0 w-full z-50 glass-card border-b border-slate-200">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between h-24 items-center">
-            <div className="flex items-center cursor-pointer" onClick={() => navigateTo(Section.HOME)}><Logo /></div>
+            <div className="flex items-center cursor-pointer" onClick={() => navigateTo(Section.HOME)}>
+              <Logo />
+            </div>
+
             <div className="hidden lg:flex items-center space-x-8 h-full">
               {Object.values(Section).map((s) => {
-                if (s === Section.SERVICES) {
+                // Special handling for dropdown items
+                if (s === Section.SERVICES || s === Section.PRODUCTS || s === Section.RESOURCES) {
+                  const isHovered = s === Section.SERVICES ? isServicesHovered : s === Section.PRODUCTS ? isProductsHovered : isResourcesHovered;
+                  const setHovered = s === Section.SERVICES ? setIsServicesHovered : s === Section.PRODUCTS ? setIsProductsHovered : setIsResourcesHovered;
+                  const data = s === Section.SERVICES ? SERVICES_DATA : s === Section.PRODUCTS ? PRODUCTS_DATA : RESOURCES_DATA;
+
                   return (
-                    <div key={s} className="relative h-full flex items-center" onMouseEnter={() => setIsServicesHovered(true)} onMouseLeave={() => setIsServicesHovered(false)}>
-                      <button onClick={() => navigateTo(s)} className={`text-xs font-bold uppercase tracking-wider flex items-center gap-1.5 h-full ${currentPage === s ? 'text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}>
-                        {s.replace('_', ' ')} <ChevronDown className={`w-3.5 h-3.5 transition-transform ${isServicesHovered ? 'rotate-180' : ''}`} />
+                    <div 
+                      key={s} 
+                      className="relative h-full flex items-center"
+                      onMouseEnter={() => setHovered(true)}
+                      onMouseLeave={() => setHovered(false)}
+                    >
+                      <button
+                        onClick={() => navigateTo(s)}
+                        className={`text-xs font-bold transition-colors uppercase tracking-wider flex items-center gap-1.5 h-full ${
+                          currentPage === s ? 'text-blue-600' : 'text-slate-600 hover:text-blue-600'
+                        }`}
+                      >
+                        {s.replace('_', ' ')}
+                        <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-300 ${isHovered ? 'rotate-180' : ''}`} />
                       </button>
-                      <div className={`absolute top-full left-0 w-72 bg-white rounded-2xl shadow-2xl border border-slate-100 py-3 transition-all z-[60] ${isServicesHovered ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'}`}>
-                        {SERVICES_DATA.map((item) => (
-                          <button key={item.id} onClick={() => { navigateTo(s); setSelectedServiceId(item.id); }} className="w-full text-left px-5 py-3.5 hover:bg-blue-50 flex items-center justify-between group">
-                            <span className="text-[11px] font-bold text-slate-700 group-hover:text-blue-600 uppercase tracking-widest">{item.title}</span>
-                            <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-blue-400" />
+                      
+                      {/* Dropdown Menu */}
+                      <div className={`absolute top-full left-0 w-72 bg-white rounded-2xl shadow-2xl border border-slate-100 py-3 transition-all duration-300 origin-top z-[60] ${
+                        isHovered ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
+                      }`}>
+                        {data.map((item: any) => (
+                          <button
+                            key={item.id}
+                            onClick={() => {
+                              navigateTo(s);
+                              if (s !== Section.RESOURCES) {
+                                setTimeout(() => {
+                                  document.getElementById(item.id)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }, 100);
+                              }
+                            }}
+                            className="w-full text-left px-5 py-3.5 hover:bg-blue-50 transition-colors flex items-center justify-between group"
+                          >
+                            <span className="text-[11px] font-bold text-slate-700 group-hover:text-blue-600 uppercase tracking-widest">
+                              {item.title || item.name}
+                            </span>
+                            <ChevronRight className="w-4 h-4 text-slate-300 group-hover:text-blue-400 transition-colors" />
                           </button>
                         ))}
                       </div>
                     </div>
                   );
                 }
+
                 return (
-                  <button key={s} onClick={() => navigateTo(s)} className={`text-xs font-bold uppercase tracking-wider ${currentPage === s ? 'text-blue-600' : 'text-slate-600 hover:text-blue-600'}`}>{s.replace('_', ' ')}</button>
+                  <button
+                    key={s}
+                    onClick={() => navigateTo(s)}
+                    className={`text-xs font-bold transition-colors uppercase tracking-wider ${
+                      currentPage === s ? 'text-blue-600' : 'text-slate-600 hover:text-blue-600'
+                    }`}
+                  >
+                    {s.replace('_', ' ')}
+                  </button>
                 );
               })}
-              <button onClick={() => navigateTo(Section.CONTACT)} className="bg-blue-600 text-white px-6 py-2.5 rounded-xl text-xs font-bold uppercase shadow-lg hover:bg-blue-700 transition-all">Inquire Now</button>
+              <button 
+                onClick={() => navigateTo(Section.CONTACT)}
+                className="bg-blue-600 text-white px-6 py-2.5 rounded-xl text-xs font-bold uppercase tracking-widest hover:bg-blue-700 transition-all shadow-lg shadow-blue-100"
+              >
+                Inquire Now
+              </button>
             </div>
-            <div className="lg:hidden"><button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 text-slate-600">{isMenuOpen ? <X /> : <Menu />}</button></div>
+
+            <div className="lg:hidden">
+              <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="p-2 text-slate-600">
+                {isMenuOpen ? <X /> : <Menu />}
+              </button>
+            </div>
           </div>
         </div>
+
+        {isMenuOpen && (
+          <div className="lg:hidden bg-white border-t border-slate-100 p-4 space-y-4 shadow-xl">
+            {Object.values(Section).map((s) => (
+              <button
+                key={s}
+                onClick={() => navigateTo(s)}
+                className="block w-full text-left px-4 py-3 text-slate-700 hover:bg-blue-50 rounded-lg capitalize font-bold"
+              >
+                {s.replace('_', ' ')}
+              </button>
+            ))}
+          </div>
+        )}
       </nav>
 
       <main className="flex-grow pt-24">
@@ -1091,18 +1227,34 @@ export default function App() {
         {currentPage === Section.ABOUT && <AboutView />}
         {currentPage === Section.SERVICES && <ServicesView />}
         {currentPage === Section.INDUSTRIES && <IndustriesView />}
+        {currentPage === Section.PRODUCTS && <ProductsView />}
+        {currentPage === Section.RESOURCES && <ResourcesView />}
         {currentPage === Section.AI_ADVISOR && <AdvisorView />}
         {currentPage === Section.CONTACT && <ContactView />}
       </main>
 
       <footer className="bg-slate-900 text-white py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Logo inverted />
-          <p className="text-slate-600 text-[10px] font-bold uppercase tracking-widest mt-8">© {new Date().getFullYear()} Mepdream operation solutions Pvt Ltd.</p>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+            <div className="flex items-center cursor-pointer" onClick={() => navigateTo(Section.HOME)}>
+              <Logo inverted />
+            </div>
+            
+            <div className="flex flex-wrap justify-center gap-10 text-[10px] font-bold uppercase tracking-[0.2em] text-slate-500">
+              <button onClick={() => navigateTo(Section.ABOUT)} className="hover:text-white transition-colors">About Us</button>
+              <button onClick={() => navigateTo(Section.SERVICES)} className="hover:text-white transition-colors">Services</button>
+              <button onClick={() => navigateTo(Section.INDUSTRIES)} className="hover:text-white transition-colors">Industries</button>
+              <button onClick={() => navigateTo(Section.PRODUCTS)} className="hover:text-white transition-colors">Products</button>
+              <button onClick={() => navigateTo(Section.CONTACT)} className="hover:text-white transition-colors">Contact</button>
+            </div>
+
+            <div className="text-slate-600 text-[10px] font-bold uppercase tracking-widest">
+              © {new Date().getFullYear()} Mepdream operation solutions Pvt Ltd.
+            </div>
+          </div>
         </div>
       </footer>
 
-      {/* Floating Buttons */}
       <div className="fixed bottom-8 right-8 z-50 flex flex-col gap-4">
          <button 
           onClick={() => navigateTo(Section.AI_ADVISOR)}
