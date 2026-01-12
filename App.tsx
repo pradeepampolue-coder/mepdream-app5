@@ -836,6 +836,74 @@ export default function App() {
       </div>
     </div>
   );
+   const ProductsView = () => (
+    <div className="animate-in slide-in-from-right duration-500 pt-12 pb-24 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <button onClick={() => navigateTo(Section.HOME)} className="flex items-center gap-2 text-blue-600 font-bold mb-8 hover:gap-3 transition-all">
+          <ArrowLeft className="w-4 h-4" /> Back to Home
+        </button>
+        
+        <div className="text-center mb-16 space-y-4">
+          <h2 className="text-blue-600 font-bold tracking-widest uppercase text-xs">Our Brands</h2>
+          <h3 className="text-3xl md:text-5xl font-bold text-slate-900 font-heading">Integrated Technology Solutions</h3>
+        </div>
+
+        <div className="space-y-24">
+          {PRODUCTS_DATA.map((product, idx) => (
+            <div key={product.id} id={product.id} className={`flex flex-col ${idx % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center`}>
+              <div className="w-full lg:w-1/2">
+                <div className="rounded-[40px] overflow-hidden shadow-2xl border border-slate-100">
+                  <img src={product.image} alt={product.name} className="w-full aspect-video object-cover" />
+                </div>
+              </div>
+              <div className="w-full lg:w-1/2 space-y-6">
+                <h4 className="text-3xl md:text-4xl font-bold text-slate-900">{product.name}</h4>
+                <p className="text-slate-600 text-lg leading-relaxed">{product.description}</p>
+                <button 
+                  onClick={() => navigateTo(Section.CONTACT)}
+                  className="bg-slate-900 text-white px-8 py-4 rounded-xl font-bold flex items-center gap-2 hover:bg-blue-600 transition-all group"
+                >
+                  Request Information <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                </button>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+
+  const ResourcesView = () => (
+    <div className="animate-in slide-in-from-right duration-500 pt-12 pb-24 bg-slate-50 min-h-screen">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <button onClick={() => navigateTo(Section.HOME)} className="flex items-center gap-2 text-blue-600 font-bold mb-8 hover:gap-3 transition-all">
+          <ArrowLeft className="w-4 h-4" /> Back to Home
+        </button>
+        
+        <div className="text-center mb-16 space-y-4">
+          <h2 className="text-orange-500 font-bold tracking-widest uppercase text-xs">Knowledge Hub</h2>
+          <h3 className="text-3xl md:text-5xl font-bold text-slate-900 font-heading">Corporate Resources</h3>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-8">
+          {RESOURCES_DATA.map((res) => (
+            <div key={res.id} className="bg-white p-10 rounded-[40px] shadow-sm hover:shadow-xl transition-all border border-slate-100 group">
+              <div className="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all text-blue-600">
+                {res.id === 'video' && <Play className="w-8 h-8" />}
+                {res.id === 'brochures' && <FileText className="w-8 h-8" />}
+                {res.id === 'gallery' && <ImageIcon className="w-8 h-8" />}
+              </div>
+              <h4 className="text-2xl font-bold mb-4 text-slate-900">{res.name}</h4>
+              <p className="text-slate-500 mb-8 leading-relaxed">{res.description}</p>
+              <button className="text-xs font-bold uppercase tracking-widest text-slate-400 group-hover:text-blue-600 transition-colors flex items-center gap-2">
+                Access Now <ChevronRight className="w-4 h-4" />
+              </button>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
 
   const HomeView = () => {
     const [currentBg, setCurrentBg] = useState(0);
