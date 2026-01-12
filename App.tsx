@@ -255,47 +255,47 @@ export default function App() {
             {[
               { 
                 title: 'Electrical Services', 
-                img: 'https://images.unsplash.com/photo-1544724569-5f546fd6f2b5?q=80&w=800',
+                img: 'https://images.squarespace-cdn.com/content/v1/62bb655bdba534582372f505/1660187905218-JD85CJTFV68AZBVFOQOC/electrician-testing-electric-',
                 text: 'We maintain electrical systems including power distribution, lighting, and emergency systems, from high-voltage substations to low-voltage workstations for buildings. We ensure safety, energy efficiency, and compliance with electrical codes.'
               },
               { 
                 title: 'Diesel Generator Services', 
-                img: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800',
+                img: 'https://static.vecteezy.com/system/resources/thumbnails/007/360/793/small_2x/a-technician-is-doing-regular-maintenance-on-the-generator-',
                 text: 'We handle the setup, routine maintenance, and troubleshooting of backup diesel generators for uninterrupted power supply. This includes load assessment, installation, repairs, and testing for reliability during outages.'
               },
               { 
                 title: 'HVAC Maintenance', 
-                img: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ecb?q=80&w=800',
+                img: 'https://www.unitedmech.com/hubfs/AdobeStock_290366802.jpeg',
                 text: 'We service, and optimize Heating, Ventilation, and Air Conditioning (HVAC) systems to ensure comfortable indoor environments. Our work includes scheduled preventive maintenance, repairs, and efficiency upgrades.'
               },
               { 
                 title: 'Fire Safety and Preventive Services', 
-                img: 'https://images.unsplash.com/photo-1563991655280-cb95c90ca2fb?q=80&w=800',
+                img: 'https://summitfire.com/wp-content/uploads/2020/04/fire-protection-engineer1_S.jpg',
                 text: 'Our teams implement and maintain fire alarm systems, sprinklers, hydrants, and emergency lighting throughout buildings. They also conduct regular inspections and testing to ensure compliance with safety regulations.'
               },
               { 
                 title: 'Sewage/Effluent/Water Treatment Plant Services', 
-                img: 'https://images.unsplash.com/photo-1541544741938-0af808871cc0?q=80&w=800',
+                img: 'https://www.cleantechwater.co.in/wp-content/uploads/2017/09/sewage-treatment-plants.jpg',
                 text: 'We maintain plumbing networks for wastewater management, sewage treatment plants, and water reuse. Our responsibilities include pump maintenance, system monitoring, and ensuring environmental standards are met.'
               },
               { 
                 title: 'Plumbing Services', 
-                img: 'https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?q=80&w=800',
+                img: 'https://jollyplumbing.com/wp-content/uploads/2022/03/choose-a-residential-plumber.jpeg',
                 text: 'We maintain building plumbing works, including pipes, sanitary fittings, leak repairs, and water supply line management. We also handle modifications related to MEP installations for seamless system integration.'
               },
               { 
                 title: 'Integrated Building Management System', 
-                img: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc51?q=80&w=800',
+                img: 'https://images.squarespace-cdn.com/content/v1/650d4f1a911c76086b5bde58/79cc819c-a3a5-4479-a4f0-525eaa7348b2/NETIX.AI%2BiBMS.jpg?format=1500w',
                 text: 'Our experts integrate and manage an Integrated Building Management System (IBMS) for centralized control of power, HVAC, security, and utilities. We oversee automation, monitoring, and optimization to enhance building performance.'
               },
               { 
                 title: 'Civil and Masonry Services', 
-                img: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ecb?q=80&w=800',
+                img: 'https://waterproofcaulking.com/wp-content/uploads/2022/09/a-commercial-masonry-contractor.jpg',
                 text: 'Our team provides civil and masonry services in facilities ensure the structural integrity, durability, and safety of buildings through activities like waterproofing, brickwork, plastering, flooring, and renovations—supporting both preventive maintenance and efficient facility upgrade.'
               },
               { 
                 title: 'Gardening Services', 
-                img: 'https://images.unsplash.com/photo-1558904541-efa8c196b27d?q=80&w=800',
+                img: 'https://gardenservicesauckland.co.nz/wp-content/uploads/2017/06/8.jpg',
                 text: 'We provide complete gardening and lawn care services, focusing on maintenance, landscaping, and regular upkeep to ensure healthy, well-maintained green spaces that enhance the beauty and environment of any facility.'
               }
             ].map((op, i) => (
