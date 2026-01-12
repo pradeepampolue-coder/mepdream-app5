@@ -59,7 +59,7 @@ import {
   GraduationCap
 } from 'lucide-react';
 import { Section, ChatMessage } from './types';
-import { SERVICES_DATA, INDUSTRIES_DATA, CORE_VALUES } from './constants';
+import { SERVICES_DATA, INDUSTRIES_DATA, PRODUCTS_DATA, RESOURCES_DATA, CORE_VALUES } from './constants';
 import { getTechnicalAdvice } from './services/geminiService';
 
 const Logo = ({ inverted = false }: { inverted?: boolean }) => (
