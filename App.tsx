@@ -260,7 +260,7 @@ export default function App() {
               },
               { 
                 title: 'Diesel Generator Services', 
-                img: 'https://static.vecteezy.com/system/resources/thumbnails/007/360/793/small_2x/a-technician-is-doing-regular-maintenance-on-the-generator-',
+                img: 'https://www.wbpsltd.co.uk/wp-content/uploads/2024/07/BRAND_TRANSITION_KOHLER_GT6784.jpg',
                 text: 'We handle the setup, routine maintenance, and troubleshooting of backup diesel generators for uninterrupted power supply. This includes load assessment, installation, repairs, and testing for reliability during outages.'
               },
               { 
